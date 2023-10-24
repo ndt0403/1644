@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      body.form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      h1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Adds space below the title */
+      }
+      form {
+        background-color: gray;
+        width: 300px;
+        height: 150px;
+        padding: 20px; /* Add some padding inside the border for spacing */
+        margin-left: 545px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0);
+      }
+
+      /* Style the input fields */
+      input {
+        width: 50%; /* Make input fields evenly spaced */
+        margin-bottom: 10px; /* Adds space below each input field */
+        padding: 5px; /* Add some padding for aesthetics */
+        border: 1px solid #000;
+      }
+
+      label{
+        font-weight: bold; /* Make labels bold */
+      }
+
+      /* Style the button */
+      button {
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px; /* Adds space above the button */
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      p {
+        margin-top: 10px; /* Adds space above the error message */
+      }
+
+      a {
+        font-weight: bold;
+        color: white;
+        margin-top: 10px; /* Adds space above the link */
+        display: block; /* Make the link a block element for full width */
+      }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1><%= title %></h1>
+        <form method="post" action="">
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" name="username" required><br>
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+            </select>
+            <button type="submit">Submit</button><br>
+            <a href="/users/login">Back Login</a>
+        </form>
+        <p class="message"><%- message %></p>
+    </div>
+</body>
+</html>

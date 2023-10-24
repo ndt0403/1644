@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        /* Custom CSS styles go here */
+        body {
+            background-color: #f0f0f0; /* Set a background color for the entire page */
+            font-family: Arial, sans-serif; /* Set a preferred font family for text */
+        }
+
+        h1 {
+            color: #007bff; /* Change the color of the h1 heading */
+        }
+
+        p {
+            font-size: 18px; /* Increase the font size of paragraphs */
+        }
+
+        a {
+            text-decoration: none; /* Remove underlines from links */
+            color: #007bff; /* Change link text color */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Add underline on hover for links */
+        }
+    </style>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 class="thead-dark"><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="/users/login">Please login</a><br><br>
+    <a href="/users/register">Please register</a>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      /*..........................................footer........................................*/
+footer {
+    display: block;
+}
+div {
+    display: block;
+}
+*, input, :before, select, :after {
+    box-sizing: border-box;
+}
+footer .footer-main .footer-left .footer-info {
+    margin-right: 20px;
+}
+footer .footer-copyright {
+    padding: 10px 0px;
+    background: #000000;
+    color: #ffffff;
+}
+footer .footer-main .footer-left {
+    padding: 20px;
+}
+footer .footer-main .footer-left .footer-info .footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+footer .footer-main .footer-left .footer-info > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+footer .footer-main .footer-left .footer-info > div i {
+    margin-right: 10px;
+}
+footer .footer-main .footer-left .footer-info > div span, footer .footer-main .footer-left .footer-info > div a {
+    color: #000000;
+}
+footer .footer-main .footer-left .footer-menu {
+    color: #000000;
+}
+.grid:after, .grid--rev:after, .grid--full:after, .grid-uniform:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.a:after {
+    content: '';
+    height: 1px;
+    background: #181818;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 0px;
+}
+footer .footer-title {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 14px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.grid--rev, .grid--full, .grid-uniform {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+}
+.grid__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+.grid--full {
+    margin-left: 0;
+}
+.grid--full > .grid__item {
+    padding-left: 0;
+}
+.no-bullets {
+    list-style: none outside;
+    margin-left: 0;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+li {
+    margin-bottom: 0.25em;
+}
+footer .footer-main .footer-left .footer-menu .footer-nav-list .footer-nav-item a {
+    margin: 5px 0px;
+    color: #000000;
+}
+.mg-bottom-30 {
+    margin-bottom: 30px !important;
+}
+footer .footer-main .footer-contact .footer-social {
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+footer .footer-main .footer-contact {
+    padding: 20px;
+}
+@media only screen and (min-width: 769px){
+    .large--two-thirds {
+        width: 66.666%;
+    }
+}
+@media only screen and (min-width: 769px){
+    .large--four-tenths {
+    width: 40%;
+    }
+}
+@media only screen and (min-width: 769px){
+    .large--three-tenths {
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 769px){
+    .large--one-third {
+        width: 33.333%;
+    }
+}
+.a {
+    position: relative;
+    color: #000000;
+    display: inline-block;
+}
+    </style>
+  </head>
+  <body>
+    <h1 class="thead-dark"><%= title %></h1>
+    <p>Welcome <%= uname %></p>
+    <table class="table">
+      <%- product_cell%>
+    </table><br>
+    <a href="/users/logout">Log Out</a>
+    <footer>
+      <div class="footer-main">
+        <div class="grid--full">
+          <div class="grid__item large--two-thirds medium--one-whole ">
+            <div class="grid--full footer-left">
+              <div class="grid__item large--four-tenths medium--one-third ">
+                <div class="footer-info">
+                  <h3 class="footer-title">Liên Hệ</h3>
+                  <div class="ft-address">
+                    <i class="fa fa-home"></i>
+                    <span>13c/9 Kỳ Đồng, Phường 9, Quận 3</span>
+                  </div>
+                  <div class="ft-hotline">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="" class="a">098 841 9100 - 090 900 4191</a>
+                  </div>
+                  <div class="ft-email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="" class="a">grimmdcsaigon@gmail.com </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item large--three-tenths medium--one-third">
+                <div class="footer-menu">
+                  <h3 class="footer-title">Thông tin</h3>
+                  <ul class="footer-nav-list no-bullets">
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Grimm DC</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">FIFTYPERCENT</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Crep Protect</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">DI SẢN</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Tin tức</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Giới thiệu</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Liên hệ</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="grid__item large--three-tenths medium--one-third">
+                <div class="footer-menu">
+                  <h3 class="footer-title">Hỗ trợ khách hàng</h3>
+                  <ul class="footer-nav-list no-bullets">
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Hướng dẫn mua hàng</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Hướng dẫn thanh toán</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Chính sách bảo mật</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Giao hàng và vận chuyển</a>
+                    </li>
+                    
+                    <li class="footer-nav-item">
+                      <a href="" class="a">Chính sách đổi trả</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="grid__item large--one-third medium--one-whole text-center footer-contact">
+            <div class="footer-social mg-bottom-30">
+              <h4 class="footer-title mg-bottom-30">
+                Chúng tôi trên mạng xã hội
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </footer>
+  </body>
+</html>
